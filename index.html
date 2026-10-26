@@ -1,77 +1,204 @@
-<!DOCTYPE html> 
-
+<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   
-
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-   
-  
-    <title>Confeitaria Artesanal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <script src="menu.js" defer></script>
+    <title>Agência AGO</title>
 </head>
-
-
 <body>
-    <div class="circulo"></div>
 
-    <img src="img/foto.logo1.jpg" alt="logo starbucks" class="logo">
+    <header>
+        <div class="interface header-flex">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/foto.logo7.jpg.jpg" alt="logo da Agência AGO">
+                </a>
+            </div>
 
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Projetos</a></li>
+                </ul>
+            </nav>
 
-    <div class="caixa-conteudo">
+            <div class="btn-contato desktop-only">
+                <a href="#contato">
+                    <button>Contato</button>
+                </a>
+            </div>
 
-        <div class="caixa-textos">
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
 
-            <h2>Que o seu lindo! <span class="texto-starbucks">Ano 2026.</span></h2>
-            <p class="paragrafo">Possa ser Doce, com as nossas Delícias.<p>Clientes como você são a base do nosso sucesso. Desejamos um final de ano de paz e um novo ciclo de grandes oportunidades e vitórias. </p>
-            </p>
-            <button><a href="https://wa.me/c/556798825686">Clique Aqui!</a></button>
-        
+            <!-- Menu Mobile -->
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div>
+    </header> 
 
-        <div class="caixa-imagem">
-            <img src="img/foto.a1.jpg" alt="copo starbucks" class="imagem-copo">
-            <!-- source / origem -->
+    <main>
+        <!-- Topo do Site -->
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex-hero">
+                    <div class="txt-top-site">
+                        <h1>DESENVOLVIMENTO WEB PROFISSIONAL PARA SEU NEGÓCIO<span>.</span></h1>
+                        <p>Criatividade e inovação andam lado a lado. Com uma combinação única de Design Impactante, funcionalidade intuitiva e otimização para resultados, estou pronto para criar o seu site.</p>
+                        <div class="btn-contato">
+                            <a href="#contato">
+                                <button>Entre em Contato</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img-topo-site">
+                        <img src="assets/foto.43.jpg.jpg" alt="Hero Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Especialidades -->
+        <section class="especialidade">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <div class="grid-especialidades">
+                    <div class="especialidade-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Website</h3>
+                        <p>Criação de sites, Desenvolvedor web</p>
+                    </div>
+
+                    <div class="especialidade-box">
+                        <i class="bi bi-cart"></i>
+                        <h3>Loja Online</h3>
+                        <p>Lojas virtuais e Ecommerces, desenvolvimento desde a arte até sua primeira venda.</p>
+                    </div>
+
+                    <div class="especialidade-box">
+                        <i class="bi bi-journal-bookmark"></i>
+                        <h3>Blog</h3>
+                        <p>Blogs e sites personalizados, responsivos e desenvolvidos sobre a plataforma.</p>
+                    </div>
+
+                    <div class="especialidade-box">
+                        <i class="bi bi-images"></i>
+                        <h3>Landingpages</h3>
+                        <p>Landingpages para captação de leads, vendas. Desenvolvidas desde a arte até o front.</p>
+                    </div>
+
+                    <div class="especialidade-box">
+                        <i class="bi bi-lightbulb-fill"></i>
+                        <h3>Criação de Marca</h3>
+                        <p>Criação de marca, desde o logotipo até seu site ou loja virtual.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex-sobre">
+                    <div class="img-sobre">
+                        <img src="assets/foto.log.jpg.jpg" alt="Foto Carlos Alexandre">
+                    </div>
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU CARLOS ALEXANDRE</span></h2>
+                        <p>Programador Web há 2 anos. Comecei a me interessar por programação com 40 anos de idade para ocupar o meu tempo. Logo quando comecei a criar sites e lojas virtuais, pude perceber que havia a possibilidade de fazer algo para mudar de profissão.</p>
+                        <p>Após iniciar a carreira como programador front-end, foi fácil me tornar um programador back-end e passar a exercer as duas funções: Criação do Front e também do Back-end.</p>
+                        <div class="btn-social">
+                            <a href="#" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="#" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
+                            <a href="#" target="_blank"><button><i class="bi bi-facebook"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfólio -->
+        <section class="portifolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTIFÓLIO.</span></h2>
+                <div class="grid-portfolio">
+                    <div class="img-port" style="background-image: url('assets/foto.arainha.jpg.jpg');">
+                        <div class="overlay">Projeto 1</div>
+                    </div>
+
+                    <div class="img-port video-container">
+                        <video src="assets/video.pa .mp4.MP4" poster="assets/foto.ca1.jpg" controls muted loop></video>
+                        <div class="overlay">Projeto 2</div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url('assets/foto.hulk2.jpg');">
+                        <div class="overlay">Projeto 3</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário -->
+        <section id="contato" class="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+                <form action="">
+                    <input type="text" placeholder="Seu nome completo:" required>
+                    <input type="email" placeholder="Seu e-mail:" required>
+                    <input type="tel" placeholder="Seu celular:">
+                    <textarea placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar">
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer flex-footer-top">
+                <div class="logo-footer">
+                    <img src="assets/foto.logo7.jpg.jpg" alt="Logotipo Agência">
+                </div>
+                <div class="btn-social">
+                    <a href="#" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                    <a href="#" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
+                    <a href="#" target="_blank"><button><i class="bi bi-facebook"></i></button></a>
+                </div>
+            </div>
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:carlosalexandre8183@gmail.com">carlosalexandre8183@gmail.com</a></p>
+            </div>
         </div>
-
-    </div>
-
-
-    <div class="caixa-menu">
-        <img 
-            src="img/foto.bom.mor.jpg" 
-            alt="copo botão" 
-            class="botao-menu" 
-            onclick="mudarCor('');trocarImagem('img/foto.bom.mor.jpg')"
-        >
-
-        <img 
-            src="img/foto.bom.uva.jpg" 
-            alt="copo botão" 
-            class="botao-menu" 
-            onclick="mudarCor(' #c5ad78');trocarImagem('img/foto.bom.uva.jpg')"
-        >
-
-        <img 
-            src="img/foto.banofe.jpg" 
-            alt="copo botão" 
-            class="botao-menu" 
-            onclick="mudarCor(' #ddbc74');trocarImagem('img/foto.banofe.jpg')"
-            >
-    </div>
-
-
+    </footer>
 
 </body>
-<script src="scripts.js"></script>
-
-
 </html>
